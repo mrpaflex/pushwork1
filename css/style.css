@@ -1,0 +1,102 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+main, footer{
+  height: 300px;
+  width: 100%;
+  background: rgb(104, 138, 151);
+
+}
+
+header nav *{
+  width: 10%;
+  color: rgb(245, 243, 243);
+  float: left;
+}
+
+nav p{
+  float: right;
+}
+
+nav img{
+  margin-left: 260px;
+  width: 3%;
+}
+
+main section{
+  clear: both;
+  text-align: center;
+  color: whitesmoke;
+}
+main + section {
+  background: white;
+  width: 100%;
+}
+main + section > section{
+  text-align: center;
+}
+
+main + section + section section{
+  width: 50%;
+  float: left;
+  text-align: center;
+  background: rgb(166, 174, 177);
+  color: white;
+}
+main + section + section + section{
+  text-align: center;
+}
+
+.fa{
+  color: white;
+  padding: 10px;
+}
+
+footer div + div ul li{
+  display: inline;
+}
+footer div + div ul li a{
+  color: white;
+  text-decoration: none;
+}
+h6{
+  color: rgb(230, 220, 220);
+  padding-left: 10px;
+}
+
+.rig{
+  float: right;
+  color: white;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
